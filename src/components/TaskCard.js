@@ -117,6 +117,7 @@ const CloseBtn = styled.button`
 const Notes = styled.textarea`
 flex: 1;
 resize: none;
+font-size: 18px;
 `
 
 const NotesWrapper = styled.div`
