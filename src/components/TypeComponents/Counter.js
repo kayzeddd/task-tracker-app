@@ -36,7 +36,7 @@ export const Counter = ({taskData}) => {
         {!editting 
         ?<>
           <ArrowUp
-          onClick={() => setCount(count + 1)}
+          onClick={() => setCount(+count + 1)}
           title='+1'
           />
           <CountDiv
@@ -46,7 +46,7 @@ export const Counter = ({taskData}) => {
             }}
           >{count}</CountDiv>
           <ArrowDown
-          onClick={() => setCount(count - 1)}
+          onClick={() => setCount(+count - 1)}
           title='-1'
                 />
         </>

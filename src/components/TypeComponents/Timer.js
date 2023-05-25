@@ -11,7 +11,7 @@ export const Timer = ({taskData}) => {
     const dispatch = useDispatch();
     const timeInputRef = useRef();
 
-    const [time, setTime] = useState(taskData.value || 0)
+    const [time, setTime] = useState(+taskData.value || 0)
     const [clock, setClock] = useState(`00:00:00`)
     const [intervalId, setIntervalId] = useState(null)
     const [editting, setEditting] = useState(false)
